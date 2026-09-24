@@ -153,10 +153,7 @@
 <span class="">VIEW INVITATION</span>
 <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:translate-y-0.5">expand_more</span>
 </a>
-<a class="px-8 py-3.5 rounded-full bg-surface-container-lowest text-primary font-button-text text-button-text uppercase tracking-widest hover:bg-blush-surface transition-all duration-300 shadow-sm flex items-center gap-2" href="#rsvp-section">
-<span class="material-symbols-outlined text-gold-antique text-[18px]">favorite</span>
-<span class="">RSVP NOW</span>
-</a>
+
 </div>
 <!-- Whimsical Flourish Icon -->
 <div class="mt-space-lg text-gold-bright text-xl select-none animate-bounce">❧</div>
@@ -276,7 +273,7 @@
 </div>
 <div class="mt-6 pt-4 flex items-center justify-between">
 <span class="text-xs text-secondary-fixed-dim">Valet parking available at Gate 2</span>
-<a class="inline-flex items-center gap-1.5 text-xs font-button-text text-secondary-fixed hover:text-surface-bright underline transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<a class="inline-flex items-center gap-1.5 text-xs font-button-text text-secondary-fixed hover:text-surface-bright underline transition-colors" href="https://maps.app.goo.gl/N3ekexAT17k1Xu728" rel="noopener noreferrer" target="_blank">
 <span class="">View Map</span>
 <span class="material-symbols-outlined text-[14px]">open_in_new</span>
 </a>
@@ -314,119 +311,7 @@
 </div>
 </div>
 </section>
-<!-- INTERACTIVE RSVP & WISHES SECTION -->
-<section class="w-full bg-surface py-space-3xl px-4 sm:px-6 relative" id="rsvp-section">
-<div class="max-w-[1000px] mx-auto flex flex-col items-center text-center">
-<!-- Decorative Circular Icons Motif (verbatim reference) -->
-<div class="flex items-center justify-center gap-3 text-gold-antique mb-space-sm select-none text-xl">
-<span class="">◌</span>
-<span class="">◌</span>
-</div>
-<!-- Overline Tag -->
-<span class="font-subheading text-subheading uppercase text-secondary tracking-[0.24em] mb-2">
-        Your presence is our present
-      </span>
-<!-- Main Headline -->
-<h2 class="font-headline-lg text-headline-lg text-primary max-w-xl mb-3">
-        See you at the celebration
-      </h2>
-<!-- Phone contact detail -->
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-lg">
-        Kindly RSVP to Priya • <a class="text-primary font-semibold hover:underline" href="tel:+919876543210">+91 98765 43210</a>
-</p>
-<!-- Open Venue Map Action -->
-<div class="mb-space-2xl">
-<a class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-primary-container text-on-primary font-button-text text-button-text uppercase tracking-widest hover:bg-maroon-deep transition-all duration-300 shadow-md hover:shadow-xl" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[18px]">near_me</span>
-<span class="">OPEN VENUE MAP</span>
-</a>
-</div>
-<!-- Interactive RSVP Form Card -->
-<div class="w-full max-w-2xl bg-surface-container-lowest rounded-3xl p-6 sm:p-10 shadow-lg text-left relative overflow-hidden">
-<div class="flex items-center justify-between mb-6 pb-4 bg-surface-container-low/40 p-4 rounded-2xl">
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Online RSVP</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Please confirm by 1st October 2026</p>
-</div>
-<span class="material-symbols-outlined text-gold-antique text-3xl">mark_email_read</span>
-</div>
-<form class="space-y-5" id="rsvp-form" onsubmit="event.preventDefault(); document.getElementById('rsvp-success').classList.remove('hidden');">
-<!-- Guest Name -->
-<div>
-<label class="block font-subheading text-[12px] uppercase tracking-wider text-on-surface mb-2" for="guest-name">Your Full Name(s)</label>
-<input class="w-full px-4 py-3 rounded-xl bg-ivory-base text-on-surface focus:outline-none focus:ring-2 focus:ring-gold-bright transition shadow-inner font-body-md text-body-md" id="guest-name" placeholder="e.g. Priya &amp; Siddharth Mehta" required="" type="text"/>
-</div>
-<!-- Attendance Radio Group -->
-<div>
-<label class="block font-subheading text-[12px] uppercase tracking-wider text-on-surface mb-2">Will you be celebrating with us?</label>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-<label class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition">
-<input checked="" class="accent-primary w-4 h-4" name="attendance" type="radio" value="attending"/>
-<span class="font-body-md text-body-md text-on-surface font-medium">Joyfully Accepts 🌸</span>
-</label>
-<label class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition">
-<input class="accent-primary w-4 h-4" name="attendance" type="radio" value="declining"/>
-<span class="font-body-md text-body-md text-on-surface-variant">Regretfully Declines</span>
-</label>
-</div>
-</div>
-<!-- Guests Count & Dietary Preferences -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div>
-<label class="block font-subheading text-[12px] uppercase tracking-wider text-on-surface mb-2" for="guest-count">Total Guests Attending</label>
-<select class="w-full px-4 py-3 rounded-xl bg-ivory-base text-on-surface focus:outline-none focus:ring-2 focus:ring-gold-bright transition shadow-inner font-body-md text-body-md" id="guest-count">
-<option value="1">1 Guest</option>
-<option selected="" value="2">2 Guests</option>
-<option value="3">3 Guests</option>
-<option value="4+">Family (4+ Guests)</option>
-</select>
-</div>
-<div>
-<label class="block font-subheading text-[12px] uppercase tracking-wider text-on-surface mb-2" for="dietary-notes">Dietary Preferences</label>
-<select class="w-full px-4 py-3 rounded-xl bg-ivory-base text-on-surface focus:outline-none focus:ring-2 focus:ring-gold-bright transition shadow-inner font-body-md text-body-md" id="dietary-notes">
-<option value="pure-veg">Pure Vegetarian</option>
-<option value="jain">Jain Vegetarian</option>
-<option value="no-pref">No Restrictions</option>
-</select>
-</div>
-</div>
-<!-- Song Request / Love Note -->
-<div>
-<label class="block font-subheading text-[12px] uppercase tracking-wider text-on-surface mb-2" for="guest-message">Song Request or Warm Wish for the Couple</label>
-<textarea class="w-full px-4 py-3 rounded-xl bg-ivory-base text-on-surface focus:outline-none focus:ring-2 focus:ring-gold-bright transition shadow-inner font-body-md text-body-md resize-none" id="guest-message" placeholder="Share a favorite Bollywood dance track or a heartfelt blessing..." rows="3"></textarea>
-</div>
-<!-- Submit Button -->
-<div class="pt-2">
-<button class="w-full py-4 rounded-full bg-primary text-on-primary font-button-text text-button-text uppercase tracking-widest hover:bg-maroon-deep transition-all duration-300 shadow-md flex items-center justify-center gap-2" type="submit">
-<span class="material-symbols-outlined text-[20px]">favorite</span>
-<span class="">Send RSVP Confirmation</span>
-</button>
-</div>
-</form>
-<!-- Success Toast Notification (Hidden by default) -->
-<div class="hidden mt-4 p-4 rounded-2xl bg-secondary-container/40 text-on-surface flex items-center gap-3" id="rsvp-success">
-<span class="material-symbols-outlined text-secondary text-2xl">celebration</span>
-<p class="font-body-md text-body-md">Thank you so much! Your response has been warmly received by Pooja &amp; Monty.</p>
-</div>
-</div>
-<!-- Dress Code & Guest Info Note -->
-<div class="mt-space-xl p-5 rounded-2xl bg-blush-surface/70 max-w-lg flex items-center gap-4 text-left">
-<div class="w-10 h-10 rounded-full bg-maroon-vibrant/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary text-[20px]">styler</span>
-</div>
-<div>
-<span class="font-subheading text-[11px] uppercase tracking-widest text-primary font-bold block">Dress Code Guidance</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Festive Indian or Indo-Western pastels with antique accents.</p>
-</div>
-</div>
-<!-- Ceremony Footnote (Verbatim reference) -->
-<div class="mt-space-2xl text-center">
-<p class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-[0.25em]">
-          POOJA &amp; MONTY • ENGAGEMENT CEREMONY • 2026
-        </p>
-</div>
-</div>
-</section>
+
 <!-- Scratch Card Logic & Countdown Scripts -->
 <script>
   (function initScratchCard() {
@@ -680,5 +565,43 @@
     setInterval(update, 1000);
   })();
 </script>
-</div></main><footer class="w-full bg-charcoal-footer text-tertiary-fixed pt-space-2xl pb-space-xl relative overflow-hidden"><div class="max-w-[1140px] mx-auto px-6 flex flex-col items-center text-center"><div class="flex items-center justify-center gap-3 mb-space-sm text-gold-bright select-none"><span class="text-[14px]">✦</span><span class="font-label-caps text-label-caps tracking-[0.25em] text-secondary-fixed uppercase">Forever &amp; Always</span><span class="text-[14px]">✦</span></div><h3 class="font-headline-lg text-headline-lg text-surface-bright mb-space-xs font-normal">#PoojaMontyForever</h3><p class="font-headline-sm text-headline-sm italic text-secondary-fixed-dim max-w-xl mb-space-lg">“Two souls, two families, one sparkling promise celebrated under golden constellations.”</p><div class="flex flex-wrap items-center justify-center gap-3 mb-space-xl"><a class="px-6 py-2.5 rounded-full bg-primary-container text-on-primary font-button-text text-button-text uppercase tracking-wider hover:bg-maroon-deep transition-all duration-300 shadow-[0_6px_20px_rgba(114,27,36,0.35)]" data-path="rsvp" href="#rsvp-section">Confirm Your Presence</a><a class="px-6 py-2.5 rounded-full bg-surface-container-lowest/10 text-surface-bright font-button-text text-button-text uppercase tracking-wider hover:bg-surface-container-lowest/20 transition-all duration-300" data-path="music-wishes" href="#rsvp-section">Dedicate a Song</a></div><div class="w-24 h-[1px] bg-gold-shimmer mb-space-lg"></div><div class="flex flex-col sm:flex-row items-center justify-between w-full text-tertiary-fixed-dim font-body-sm text-body-sm gap-4"><p class="">Chandra Garden, Mathura Rd. • Aligarh, U.P.</p><p class="">© 2024 Pooja &amp; Monty Celebration. Crafted with Love &amp; Sparkles.</p></div></div></footer>
+</div></main><footer class="w-full bg-charcoal-footer text-tertiary-fixed pt-space-2xl pb-space-xl relative overflow-hidden"><div class="max-w-[1140px] mx-auto px-6 flex flex-col items-center text-center"><div class="flex items-center justify-center gap-3 mb-space-sm text-gold-bright select-none"><span class="text-[14px]">✦</span><span class="font-label-caps text-label-caps tracking-[0.25em] text-secondary-fixed uppercase">Forever &amp; Always</span><span class="text-[14px]">✦</span></div><h3 class="font-headline-lg text-headline-lg text-surface-bright mb-space-xs font-normal">#PoojaMontyForever</h3><p class="font-headline-sm text-headline-sm italic text-secondary-fixed-dim max-w-xl mb-space-lg">“Two souls, two families, one sparkling promise celebrated under golden constellations.”</p><div class="flex flex-wrap items-center justify-center gap-3 mb-space-xl"><a class="px-6 py-2.5 rounded-full bg-primary-container text-on-primary font-button-text text-button-text uppercase tracking-wider hover:bg-maroon-deep transition-all duration-300 shadow-[0_6px_20px_rgba(114,27,36,0.35)]" data-path="rsvp" href="https://maps.app.goo.gl/N3ekexAT17k1Xu728" target="_blank">View Venue</a><a class="px-6 py-2.5 rounded-full bg-surface-container-lowest/10 text-surface-bright font-button-text text-button-text uppercase tracking-wider hover:bg-surface-container-lowest/20 transition-all duration-300" data-path="music-wishes" href="tel:+919759538717">Call Us</a></div><div class="w-24 h-[1px] bg-gold-shimmer mb-space-lg"></div><div class="flex flex-col sm:flex-row items-center justify-between w-full text-tertiary-fixed-dim font-body-sm text-body-sm gap-4"><p class="">Chandra Garden, Mathura Rd. • Aligarh, U.P.</p><p class="">© 2024 Pooja &amp; Monty Celebration. Crafted with Love &amp; Sparkles.</p></div></div></footer>
+
+
+<!-- Background Music (replace wedding-music.mp3 with your file name) -->
+<audio id="bgMusic" loop preload="auto">
+    <source src="wedding-music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle" style="position:fixed;top:20px;right:20px;z-index:9999;padding:10px 14px;border:none;border-radius:999px;cursor:pointer;background:#721b24;color:white;font-size:14px;">
+🔊 Music
+</button>
+
+<script>
+const bgMusic = document.getElementById('bgMusic');
+const musicToggle = document.getElementById('musicToggle');
+let musicStarted = false;
+
+function startMusic() {
+    if (musicStarted) return;
+    bgMusic.play().then(() => {
+        musicStarted = true;
+    }).catch(() => {});
+}
+
+document.addEventListener('click', startMusic, { once: true });
+document.addEventListener('touchstart', startMusic, { once: true });
+
+musicToggle.addEventListener('click', function(e){
+    e.stopPropagation();
+    if(bgMusic.paused){
+        bgMusic.play();
+        musicToggle.innerHTML = '🔊 Music';
+    } else {
+        bgMusic.pause();
+        musicToggle.innerHTML = '🔇 Muted';
+    }
+});
+</script>
+
 </body></html>
