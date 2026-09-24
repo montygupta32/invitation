@@ -567,39 +567,45 @@
 </script>
 </div></main><footer class="w-full bg-charcoal-footer text-tertiary-fixed pt-space-2xl pb-space-xl relative overflow-hidden"><div class="max-w-[1140px] mx-auto px-6 flex flex-col items-center text-center"><div class="flex items-center justify-center gap-3 mb-space-sm text-gold-bright select-none"><span class="text-[14px]">✦</span><span class="font-label-caps text-label-caps tracking-[0.25em] text-secondary-fixed uppercase">Forever &amp; Always</span><span class="text-[14px]">✦</span></div><h3 class="font-headline-lg text-headline-lg text-surface-bright mb-space-xs font-normal">#PoojaMontyForever</h3><p class="font-headline-sm text-headline-sm italic text-secondary-fixed-dim max-w-xl mb-space-lg">“Two souls, two families, one sparkling promise celebrated under golden constellations.”</p><div class="flex flex-wrap items-center justify-center gap-3 mb-space-xl"><a class="px-6 py-2.5 rounded-full bg-primary-container text-on-primary font-button-text text-button-text uppercase tracking-wider hover:bg-maroon-deep transition-all duration-300 shadow-[0_6px_20px_rgba(114,27,36,0.35)]" data-path="rsvp" href="https://maps.app.goo.gl/N3ekexAT17k1Xu728" target="_blank">View Venue</a><a class="px-6 py-2.5 rounded-full bg-surface-container-lowest/10 text-surface-bright font-button-text text-button-text uppercase tracking-wider hover:bg-surface-container-lowest/20 transition-all duration-300" data-path="music-wishes" href="tel:+919759538717">Call Us</a></div><div class="w-24 h-[1px] bg-gold-shimmer mb-space-lg"></div><div class="flex flex-col sm:flex-row items-center justify-between w-full text-tertiary-fixed-dim font-body-sm text-body-sm gap-4"><p class="">Chandra Garden, Mathura Rd. • Aligarh, U.P.</p><p class="">© 2024 Pooja &amp; Monty Celebration. Crafted with Love &amp; Sparkles.</p></div></div></footer>
 
+<!-- Background Music -->
+<div style="display:none">
+  <iframe id="bg-music"
+    width="0" height="0"
+    src="https://www.youtube.com/embed/sfyDlrl2kgw?autoplay=1&loop=1&playlist=sfyDlrl2kgw"
+    title="Background Music"
+    allow="autoplay">
+  </iframe>
+</div>
 
-<!-- Background Music (replace wedding-music.mp3 with your file name) -->
+
 <audio id="bgMusic" loop preload="auto">
     <source src="wedding-music.mp3" type="audio/mpeg">
 </audio>
 
-<button id="musicToggle" style="position:fixed;top:20px;right:20px;z-index:9999;padding:10px 14px;border:none;border-radius:999px;cursor:pointer;background:#721b24;color:white;font-size:14px;">
+<button id="musicToggle"
+style="position:fixed;top:20px;right:20px;z-index:9999;padding:10px 14px;border:none;border-radius:999px;cursor:pointer;background:#7b2330;color:white;border-radius:30px;">
 🔊 Music
 </button>
 
 <script>
 const bgMusic = document.getElementById('bgMusic');
 const musicToggle = document.getElementById('musicToggle');
-let musicStarted = false;
 
 function startMusic() {
-    if (musicStarted) return;
-    bgMusic.play().then(() => {
-        musicStarted = true;
-    }).catch(() => {});
+    bgMusic.play().catch(err => console.log(err));
 }
 
 document.addEventListener('click', startMusic, { once: true });
 document.addEventListener('touchstart', startMusic, { once: true });
 
-musicToggle.addEventListener('click', function(e){
+musicToggle.addEventListener('click', function(e) {
     e.stopPropagation();
-    if(bgMusic.paused){
+    if (bgMusic.paused) {
         bgMusic.play();
-        musicToggle.innerHTML = '🔊 Music';
+        musicToggle.textContent = '🔊 Music';
     } else {
         bgMusic.pause();
-        musicToggle.innerHTML = '🔇 Muted';
+        musicToggle.textContent = '🔇 Muted';
     }
 });
 </script>
